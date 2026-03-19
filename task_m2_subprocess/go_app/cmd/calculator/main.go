@@ -1,4 +1,3 @@
-// Package main реализует калькулятор статистики, читающий JSON из stdin.
 package main
 
 import (
@@ -9,12 +8,10 @@ import (
 	"sort"
 )
 
-// Input — входные данные: список чисел.
 type Input struct {
 	Numbers []float64 `json:"numbers"`
 }
 
-// Output — результат статистической обработки.
 type Output struct {
 	Sum    float64 `json:"sum"`
 	Mean   float64 `json:"mean"`
